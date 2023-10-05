@@ -513,6 +513,7 @@ namespace Injector
 
         static void Main(string[] args)
         {
+            Console.Title = "Light Injector v1.0.0 | ";
             // Set console colors for the interface.
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Welcome USER, you are using Light Injector v1\n");
@@ -564,6 +565,7 @@ namespace Injector
                     Console.Write("Enter the path to the DLL to inject: ");
                     Console.ResetColor();
                     targetdllPath = Console.ReadLine();
+                    Console.Title = "Light Injector v1.0.0 | " + targetProcessName + " | ";
                 }
 
                 // Perform injection into the specified process by name based on the user's choice.
